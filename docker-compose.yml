@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+
+  obj-api:
+      container_name: obj-api
+      image: obj-api
+      build:
+        context: .
+        dockerfile: Dockerfile
+      command: sh -c "./docker-entrypoint.sh"
+      ports:
+        - 5000:5000
+      volumes:
+        - ./src:/code
+      restart: always
+
