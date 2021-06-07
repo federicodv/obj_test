@@ -1,3 +1,8 @@
+Quick start:
+```
+$ git clone https://github.com/federicodv/obj_test.git && docker-compose -f obj_test/docker-compose.yml up --build
+```
+
 To deploy:  
 docker-compose up --build  
 
